@@ -6,15 +6,15 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Scott"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2017
 
 # icon between year and author @Footer
 authoricon: heart
@@ -47,12 +47,12 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
+  categories: /categories/
   archives: /archives/
   tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  sitemap: /sitemap.xml
+  about: /about/
+# commonweal: /404.html
 
 # Enable/Disable menu icons.
 # Icon Mapping:
@@ -70,6 +70,8 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  search: search
+
 
 
 # ---------------------------------------------------------------
@@ -89,9 +91,10 @@ scheme: Muse
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  Github: https://github.com/xuxin0612
+  Weibo: http://weibo.com/u/5030580065
+  Linkedin: https://www.linkedin.com/in/scott-hsu-247781145
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -104,18 +107,20 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Linkedin: linkedin
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
+links_title: Links
+links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+   #Linux学习笔记: https://sliverraven.github.io/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
+avatar: /uploads/59572399266843.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -157,7 +162,7 @@ sidebar:
 
   # Scroll percent label in b2t button
   scrollpercent: false
-  
+
   # Enable sidebar on narrow view
   onmobile: false
 
@@ -167,10 +172,10 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -179,13 +184,13 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: false
-  length: 150
+  length: 350
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -197,10 +202,10 @@ post_wordcount:
   separated_meta: true
 
 # Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+wechat_subscriber:
+  enabled: true
+  qcode: /uploads/wechat-qcode.jpg
+  description: my public wechat account
 
 # Declare license on posts
 post_copyright:
@@ -306,7 +311,7 @@ disqus:
   count: true
 
 # Hypercomments
-#hypercomments_id:
+hypercomments_id: 93330
 
 # changyan
 changyan:
@@ -330,7 +335,7 @@ changyan:
 ##  type: button
 
 # Share
-#jiathis:
+jiathis: true
 # Warning: JiaThis does not support https.
 #add_this_id:
 
@@ -339,10 +344,10 @@ changyan:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: hSXNaNnMN4DfGahmyM8qS84Pp1sHEcveykAl9V2OJf4
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-102616840-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -411,7 +416,7 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -465,9 +470,8 @@ algolia_search:
 
 
 # Local search
-# Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto

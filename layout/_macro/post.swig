@@ -273,7 +273,7 @@
         {% elif post.excerpt  %}
           {{ post.excerpt }}
           <!--noindex-->
-          <div class="post-button text-center">
+          <div class="post-button text-right">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
@@ -302,11 +302,13 @@
       {% endif  %}
     </div>
 
+    <!--
     <div>
       {% if not is_index %}
         {% include 'wechat-subscriber.swig' %}
       {% endif %}
     </div>
+    -->
 
     <div>
       {% if not is_index %}

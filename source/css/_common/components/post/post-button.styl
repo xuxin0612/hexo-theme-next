@@ -6,11 +6,15 @@
     font-size: $read-more-font-size;
     background: $read-more-bg-color;
     border-radius: $read-more-border-radius;
+    border: 0px;
     line-height: 2;
     margin: 0 4px 8px 4px;
   }
   .btn:hover {
-    @extend .btn:hover;
+    //@extend .btn:hover;
+    border-color: $btn-default-hover-border-color;
+    color: orange;
+    background: $read-more-bg-color;
   }
   .fa-fw {
     width: (18em / 14);

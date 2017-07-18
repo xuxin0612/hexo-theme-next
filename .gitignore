@@ -3,6 +3,7 @@
 *.log
 *.iml
 node_modules/
+_config.yml
 
 # Ignore unused verdors' files
 source/lib/fancybox/*

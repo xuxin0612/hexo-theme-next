@@ -3,6 +3,8 @@
 *.log
 *.iml
 node_modules/
+_config.yml
+themes/next/_config.yml
 
 # Ignore unused verdors' files
 source/lib/fancybox/*

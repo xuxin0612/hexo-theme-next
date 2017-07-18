@@ -145,6 +145,8 @@ $code-font-family               = $font-family-monospace
 $code-font-size                 = 13px
 $code-font-size                 = unit(hexo-config('font.codes.size'), px) if hexo-config('font.codes.size') is a 'unit'
 $code-border-radius             = 3px
+$code-foreground                = $black-light
+$code-background                = $gainsboro
 
 
 
@@ -213,15 +215,18 @@ $headband-bg                    = $black-deep
 // Variables for header section elements.
 // --------------------------------------------------
 
-$head-bg                        = white
+$head-bg                        = transparent
 
 // Site Meta
 $site-meta-text-align           = center
-$brand-color                    = white
-$brand-hover-color              = white
-$brand-bg                       = $black-deep
+//$brand-color                    = white
+//$brand-hover-color              = white
+//$brand-bg                       = $black-deep
+$brand-color                    = $black-deep
+$brand-hover-color              = orange
+$brand-bg                       = white
 
-$logo-font-size                 = 20px
+$logo-font-size                 = 40px
 $logo-font-size                 = unit(hexo-config('font.logo.size'), px) if hexo-config('font.logo.size') is a 'unit'
 
 $site-subtitle-color            = $grey-dark
@@ -237,6 +242,16 @@ $menu-link-hover-border         = $black-deep
 // Posts Expand
 // --------------------------------------------------
 $posts-expand-title-font-weight = $font-weight-normal
+$post-copyright = {
+  margin: 2em 0 0,
+  padding: .5em 1em,
+  bg: #f9f9f9,
+  border: {
+    width: 3px,
+    style: solid,
+    color: #ff1700
+  }
+}
 
 
 // Posts Collpase
@@ -244,9 +259,9 @@ $posts-expand-title-font-weight = $font-weight-normal
 $posts-collapse-left            = 55px
 $posts-collapse-left-mobile     = 5px
 
-$read-more-color                = white
+$read-more-color                = $black-deep
 $read-more-font-size            = 14px
-$read-more-bg-color             = $black-deep
+$read-more-bg-color             = white
 $read-more-border-radius        = 0
 
 
@@ -264,6 +279,7 @@ $site-author-image-width              = 96px
 $site-author-image-height             = auto
 $site-author-image-border-width       = 2px
 $site-author-image-border-color       = $black-dim
+$site-author-image-border-radius      = 50px
 
 $site-author-name-margin              = 5px 0 0
 $site-author-name-color               = $whitesmoke
@@ -299,11 +315,15 @@ $toc-link-active-current-border-color = $sidebar-highlight
 $b2t-opacity                  = 1
 $b2t-position-bottom          = -100px
 $b2t-position-bottom-on       = 19px
-$b2t-position-right           = 50px
+$b2t-position-right           = 30px
 $b2t-font-size                = 12px
 $b2t-color                    = white
 $b2t-bg-color                 = $black-deep
 
+// full-image
+$full-image-width             = 110%
+$full-image-margin-horizontal = -5%
+$full-image-margin-vertical   = 25px
 
 //  .post-expand .post-eof
 //  In Muse scheme, margin above and below the post separator

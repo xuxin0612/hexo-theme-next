@@ -1,3 +1,7 @@
+## ATTENTION!
+If you want to fast resolve your issue, **write it in English, please**. Not all contributors/collaborators know Chinese language and Google translate can't always give true translates on issues. Thanks!
+
+***
 
 ### Expected behavior (预期行为)
 
@@ -8,7 +12,7 @@
 ### Steps to reproduce the behavior (重现步骤)
 
 
-### NexT Informations
+### NexT Information
 
 Add the  ✔  sign before an item which is affected by this behavior.
 
@@ -24,6 +28,6 @@ NexT Scheme:
   -  Mist
   -  Pisces
 
-### Other Informations (Like Browser, System, Screenshots)
+### Other Information (Like Browser, System, Screenshots)
 
 
